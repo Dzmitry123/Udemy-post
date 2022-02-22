@@ -1,0 +1,5 @@
+<div class="card">
+  <h2 *ngIf="postt">{{postt.title}}</h2>
+  <p *ngIf="postt">{{postt.text}}</p>
+  <ng-content></ng-content>
+</div>
