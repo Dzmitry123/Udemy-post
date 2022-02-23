@@ -6,13 +6,15 @@ import { PostComponent } from './post/post.component';
 // import { Post2Component } from './post2/post2.component';
 import { FormsModule } from '@angular/forms';
 import { PostFormComponent } from './post-form/post-form.component';
+import { StyleDirective } from './directives/style.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
     // Post2Component,
-    PostFormComponent
+    PostFormComponent,
+    StyleDirective
   ],
   imports: [
     BrowserModule,
