@@ -21,5 +21,6 @@ export class AppComponent {
     this.posts.unshift(post);
     console.log('Post', post)
   }
+  isVisible = true;
 
 }

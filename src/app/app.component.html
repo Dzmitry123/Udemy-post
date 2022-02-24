@@ -24,6 +24,15 @@
   <p [appStyle]="'blue'" [dStyles]="{border: '1px solid red', borderRadius: '15px'}">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, vitae?</p>
 
+  <button class="btn" (click)="isVisible = !isVisible"> Toggle </button>
+
+<!--  <div *ngIf="isVisible" class="wrap">-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor eaque enim error harum hic optio reprehenderit. Earum, exercitationem numquam.</p>-->
+<!--  </div>-->
+
+  <div class="wrap" *appIfnot="!isVisible" >
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor eaque enim error harum hic optio reprehenderit. Earum, exercitationem numquam.</p>
+  </div>
 </div>
 
 
